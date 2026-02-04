@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <div className="bg-gray-700 h-full w-full">
       <div className="bg-gray-700 h-20 w-full flex justify-between py-4 pl-40 items-center gap-20 pr-40">
-        <p>Home</p>
+        <p>Hom1e</p>
         <p>Product</p>
         <img
           className="h-20 w-20 py-2 px-2 rounded-full"
