@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="bg-gray-800 p-8 rounded-2xl shadow-lg w-full max-w-md flex flex-col justify-center items-center     ">
+    <h1 class="text-xl font-bold mb-4 text-center">Login / нэвтрэх
+    </h1>
+     
+    <div class="space-y-3 mb-5">
+      <input id="name" type="text" class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none text-center " >
+      <input id="password" type="password" class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none text-center ">
+    </div>
+
+    <button id="b"
+      onclick="showtheresult()" 
+      class="w-40 bg-blue-600 hover:bg-blue-700 p-2 rounded-lg font-semibold ">
+      Нэвтрэх
+    </button>
+    <div id="textholder" class="text-green-500 pr-8"></div>
+    <script>
+        const name = "admin";
+        const password = "Nest123$";
+        function showtheresult() {
+            const inputName = document.getElementById("name").value;
+            const inputPassword = document.getElementById("password").value;
+
+            if (inputName === name && inputPassword === password) {
+                document.getElementById("textholder").textContent = "Амжилттай нэвтэрлээ!";
+            } else {
+                document.getElementById("textholder").textContent = "Нэвтрэх нэр эсвэл нууц үг буруу байна.";
+            }
+        }
+
+    </script>
+</body>
+</html>
