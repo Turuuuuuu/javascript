@@ -1,0 +1,55 @@
+export default function WeatherPage() {
+  return (
+    <div className="bg-black w-full h-dvh gap-4 flex p-4">
+      <div className=" w-[10%] bg-blue-200 h-dvh flex flex-col items-center border-2 rounded-xl">
+        <img
+          src="/wind-solid.svg"
+          className=" bg-gray-700 w-20 h-20 m-8 border-2 border-gray-300 rounded-full p-4 "
+          alt="image"
+        />
+        <div className="mt-6">
+            <img src="/cloud-regular.svg" className="w-14 h-14"/>
+            <p>Weather</p>
+        </div>
+        <div className="mt-4">
+            <img src="/bars-solid.svg" className="w-14 h-14"/>
+            <p>Weather</p>
+        </div>
+        <div className="mt-4">
+            <img src="/map-regular.svg" className="w-14 h-14"/>
+            <p>Weather</p>
+        </div>
+        <div className="mt-4">
+            <img src="/settings.svg" className="w-14 h-14"/>
+            <p>Settings</p>
+        </div>
+      </div>
+      <div className=" w-[50%] h-dvh bg-gray-400 ">
+        <div>
+            <div className="w-[80%] ml-10 mt-4 h-10 bg-blue-800 flex items-center rounded-lg">
+            <p className="text-white m-4 ">Search for cities</p> 
+        </div>
+        <div className="flex justify-between mx-1 mr-10 items-center">
+            <div className="">
+                <p className="text-white text-4xl font-semibold ml-10 mt-4">Madrid</p>
+            <p className="text-black ml-10 mt-4">Chance of rain 0%</p>
+            </div>
+            <img src="/robot.png" className="w-20 h-20"/>
+        </div>
+{/* fdsf */}
+        <div>
+            <div>
+                <p>6:00aM</p>
+                <img />
+                <span>25c</span>
+            </div>
+        </div>
+        
+
+        </div>
+        
+      </div>
+      <div className="w-[40%] h-dvh bg-red-200">2</div>
+    </div>
+  );
+}
